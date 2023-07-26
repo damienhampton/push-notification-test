@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <script id="script">
+            var s = document.createElement("script")
+            s.src = "https://notix.io/ent/current/enot.min.js"
+            s.onload = function (sdk) {
+                sdk.startInstall(
+                    {
+                        "appId": "1005dc49764b90925b7c4b081ad0bc5",
+                        "loadSettings": true,
+                        "sw": {
+                            "url": '/sw.js',
+                        }
+                    }
+                )
+            }
+            document.head.append(s)
+        </script>
+    </head>
+    <body>
+        <h1>Notix</h1>
+    </body>
+</html>
